@@ -1,0 +1,193 @@
+@import '../../../assets/style/mixin.scss';
+
+.L-imgaeblock {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+
+    @include screen(1084px) {
+
+        flex-direction: column;
+    }
+
+    .left-img {
+
+        @include screen(1084px) {
+
+            margin: 0 auto;
+
+        }
+
+        .L-img2 {
+            display: flex;
+            margin-left: 55px;
+
+            @include screen(580px) {
+
+                flex-direction: column;
+                margin: 0;
+             
+                
+                   }
+          
+
+        }
+
+        .L-img1 {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10px;
+
+            @include screen(580px) {
+
+                flex-direction: column;
+                align-items: self-start;
+                
+             
+                
+                   }
+
+        }
+    }
+
+
+
+    .right-numbers {
+        width: 50%;
+        @include screen(1084px){
+
+            width: 100%;
+            margin: 0 50px;
+
+            }
+
+
+
+        .aboutus {
+
+            width: 70%;
+            margin-top: 80px;
+
+            @include screen(1084px) {
+
+                width: 100%;
+            }
+
+
+            .titles {
+
+                display: flex;
+                align-items: center;
+
+
+                .titleabout {
+                    font-size: 20px;
+                    margin-right: 8px;
+                    color: #FEA116;
+                    font-family: 'MyFont2';
+
+                }
+
+                .yelow {
+                    width: 70px;
+                    height: 3px;
+                    background-color: #FEA116;
+                }
+
+            }
+
+            .welcom {
+                font-size: 40px;
+                font-family: 'MyFont2';
+
+                @include screen(740px) {
+                    font-size: 30px;
+                    
+            
+                       }
+                       @include screen(465px) {
+                        font-size: 28px;
+                        
+                           }
+            }
+
+            .font2 {
+                font-size: 35px;
+                color: #FEA116;
+            }
+
+            .descript{
+
+                width: 90%;
+
+                .desc {
+                    margin-bottom: 15px;
+                    opacity: 0.5;
+                }
+            }
+
+           
+
+            .fornumber {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @include screen(515px) {
+                    flex-direction: column;
+                    margin-top: 20px;
+                    
+                       }
+
+                .leftnumb {
+                    width: 40%;
+                    height: 50px;
+                    border-left: 7px solid #FEA116;
+                    display: flex;
+                    align-items: center;
+
+                    @include screen(515px) {
+                        margin-top: 20px;
+                        width: 100%;
+                        
+                           }
+
+
+                    .numbers {
+                        font-size: 45px;
+                        margin-top: 5px;
+                        margin-left: 15px;
+                        color: #FEA116;
+
+
+
+                    }
+
+                    .fors {
+                        margin-top: 0px;
+                        margin-left: 15px;
+                        opacity: 0.5;
+                    }
+
+                    .for {
+                        margin-bottom: 0px;
+                        margin-left: 15px;
+
+                    }
+
+                }
+            }
+
+            .read {
+                padding: 15px 45px;
+                border: none;
+                background-color: #FEA116;
+                color: white;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

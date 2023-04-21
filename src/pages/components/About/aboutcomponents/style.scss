@@ -1,0 +1,17 @@
+@import '../../../../assets/style/mixin.scss';
+
+.img-block{
+    margin-right: 20px;
+
+    @include screen(1300px) {
+        flex-direction: column;
+        width: 50%;
+        margin-top: 10px;
+    }
+    @include screen(580px) {
+
+        width: 298px;
+     
+        
+           }
+}

@@ -1,0 +1,102 @@
+@import '../../../assets/style/mixin.scss';
+
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../../../assets/style/font/font/Alkatra-VariableFont_wght.ttf');
+  }
+*{
+    font-family: 'MyFont';
+}
+.L-web-block{
+
+    .back-img{
+        width: 100%;
+        height: auto;
+        background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../../../assets/img/bg-hero.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        
+
+
+
+            .section{
+
+                padding: 20px;
+
+                .text-anim{
+                    width: 100%;
+                    margin-top: 120px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include screen(820px){
+        
+                        flex-direction: column;
+                        
+                    }
+                    
+                    
+                    .left-text{
+                        width: 50%;
+
+                    
+    
+                    .title1{
+                        color: white;
+                        font-size: 65px;
+                        font-family: 'MyFont2';
+                    }
+                    .title-desk{
+                        color: white;
+                        font-family: 'MyFont';
+                    }
+                    .button-book{
+                        margin-top: 20px;
+                        padding: 15px 40px;
+                        background-color: #FEA116;
+                        border: none;
+                        border-radius: 10px;
+                        font-family: 'MyFont';
+                        cursor: pointer;
+                    }
+                }
+
+                .right-anim{
+                    overflow: hidden;
+
+
+                    .img-anim{
+                        width: 600px;
+                        height: 600px;
+                        animation: rotate 50s linear infinite;
+
+
+                        @keyframes rotate {
+                            from {
+                              transform: rotate(0deg);
+                            }
+                            to {
+                              transform: rotate(360deg);
+                            }
+                          }
+                          
+                          @include screen(630px){
+        
+                            width: 300px;
+                            height: 300px;                        
+                        }
+                    }
+                }
+
+            }
+            }
+            
+
+        }
+        
+        
+    }
+    

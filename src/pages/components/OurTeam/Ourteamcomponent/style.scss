@@ -1,0 +1,86 @@
+@import '../../../../assets/style/mixin.scss';
+
+.blockteam {
+    width: 25%;
+    // padding-bottom: 50px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+    @include screen(1320px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+   
+
+
+    &:hover {
+        .icons1 {
+            height: 50px;
+
+        }
+
+        .imgwid {
+            transform: scale(1.1);
+        }
+    }
+
+    .imgradius {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+
+        .imgrad{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden !important;
+            margin: 1.5rem !important;
+
+            .imgwid {
+                max-width: 100%;
+                transition: 0.5S;
+    
+            }
+        }
+        
+
+        .icons1 {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+
+            
+
+
+            .icon1 {
+                margin-left: 10px;
+                background-color: #FEA116;
+                height: 50px;
+                width: 50px;
+                border-radius: 38px 38px 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+
+
+        }
+    }
+
+
+
+}

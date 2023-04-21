@@ -1,0 +1,50 @@
+@import '../../../../assets/style/mixin.scss';
+.block-component{
+    width: 24%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+
+    @include screen(1300px) {
+        flex-direction: column;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    &:hover{
+        background-color: #FEA116;
+        transition: 0.8s;
+
+        .paddind-componens{
+            .chencgecolor{
+                color: white;
+            }
+
+            .L-name{
+                color: white;
+            }
+
+            .description{
+                color: white;
+            }
+            
+        }
+       
+    }
+
+
+    .paddind-componens{
+        padding: 35px 10px 35px 10px;
+
+        .L-name{
+            font-size: 25px;
+        }
+        .description{
+            color: silver;
+            
+        }
+        .chencgecolor{
+            color: #FEA116;
+        }
+    }
+
+}
