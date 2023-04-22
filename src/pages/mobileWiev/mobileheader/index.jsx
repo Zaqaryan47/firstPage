@@ -37,7 +37,7 @@ const Mobheader = () => {
                 </div>
             
                         <div  style={{display:block}} className="headerbtn">
-                        <p className="btn"><NavLink className='btn' to="/home">HOME</NavLink> </p>
+                        <p className="btn"><NavLink className='btn' to="/">HOME</NavLink> </p>
                         <p className="btn"><NavLink className='btn' to="/about">ABOUT</NavLink></p>
                         <p className="btn"><NavLink className='btn' to="/service">SERVICE</NavLink></p>
                         <p className="btn"><NavLink className='btn' to="/menu">MENU</NavLink></p>

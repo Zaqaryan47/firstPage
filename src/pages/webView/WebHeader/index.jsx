@@ -43,7 +43,7 @@ const Webheader = () => {
                     <p className="title">Restoran</p>
                     </div>
                     <div className="right">
-                        <p onClick={tab1} className="btn"><NavLink className={`btn ${tabindex == 1? 'active1-btn':''}`} to="/home">HOME</NavLink> </p>
+                        <p onClick={tab1} className="btn"><NavLink className={`btn ${tabindex == 1? 'active1-btn':''}`} to="/">HOME</NavLink> </p>
                         <p onClick={tab2} className="btn"><NavLink className={`btn ${tabindex == 2? 'active1-btn':''}`} to="/about">ABOUT</NavLink></p>
                         <p onClick={tab3} className="btn"><NavLink className={`btn ${tabindex == 3? 'active1-btn':''}`} to="/service">SERVICE</NavLink></p>
                         <p onClick={tab4} className="btn"><NavLink className={`btn ${tabindex == 4? 'active1-btn':''}`} to="/menu">MENU</NavLink></p>

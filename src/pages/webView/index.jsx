@@ -1,15 +1,7 @@
 import './style.scss'
-import Home from '../components/Home'
-import About from '../components/About'
-import Team from '../components/OurTeam'
-import Menu from '../components/Menu'
-import Reseption from '../components/reseption'
-import Testi from '../components/testimonial'
 import Footer from '../components/Footer'
 import Webheader from './WebHeader'
 import { Route, Routes } from 'react-router-dom'
-import Service from '../components/Service'
-import Aboutt from '../../router/booking'
 import Serv from '../../router/service'
 import Menus from '../../router/menu'
 import Booking from '../../router/booking'
@@ -34,7 +26,7 @@ const Webview = () => {
 
 
         <Routes>
-            <Route path='/home' element={<Homesrot/>} index />
+            <Route path='/' element={<Homesrot/>} index />
             <Route path='/about' element={<Aboutis/>}/>
             <Route path='/service' element={<Serv/>}/>
             <Route path='/menu' element={<Menus/>}/>
