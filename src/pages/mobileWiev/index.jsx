@@ -27,7 +27,7 @@ const Mobileview = () => {
             <Mobheader />
             <Routes>
 
-            <Route path='/home' element={<Homesrot/>} index />
+            <Route path='/' element={<Homesrot/>} index />
             <Route path='/about' element={<Aboutis/>}/>
             <Route path='/service' element={<Serv/>}/>
             <Route path='/menu' element={<Menus/>}/>

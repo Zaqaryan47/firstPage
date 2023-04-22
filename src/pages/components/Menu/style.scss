@@ -76,7 +76,7 @@
         .menuone {
             display: flex;
             align-items: center;
-            border-bottom: 2px solid #FEA116;
+            
             font-size: 19px;
             cursor: pointer;
 
@@ -134,5 +134,8 @@
             }
 
         }
+    }
+    .active-btn {
+        border-bottom: 2px solid #FEA116;
     }
 }

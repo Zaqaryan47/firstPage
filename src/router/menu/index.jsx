@@ -7,7 +7,7 @@ import './style.scss'
 const Menus = ()=>(
     <div>
         <div className="L-blocks">
-            <h1 className="title">Food Menu</h1>
+            <h1 className="title3">Food Menu</h1>
         </div>
 
         <Menu/>

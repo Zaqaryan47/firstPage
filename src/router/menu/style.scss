@@ -1,5 +1,6 @@
+@import '../../assets/style/mixin.scss';
 
-.L-blocks{
+.L-blocks {
     width: 100%;
     padding: 100px;
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../../assets/img/bg-hero.jpg);
@@ -8,9 +9,14 @@
     background-size: cover;
     margin-bottom: 50px;
 
-    .title{
+    .title3 {
         text-align: center;
         color: white;
         font-size: 80px;
+
+        @include screen(390px) {
+
+            font-size: 40px;
+        }
     }
 }

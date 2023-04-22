@@ -7,36 +7,34 @@ export default function(){
 
     
 
-    function regValidation(val, type,){
+    function regValidation(val,){
         const regexVal = /.+@[^@]+\.[^@]{2,}$/
         const regexname = /^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)/
     
 
-        if(!regexVal.test(val) && val != '' && type == 'email'){
-          setErrorEmail('errorr mail ')
-        }else if(val == '' && type == 'email'){
-          setErrorEmail('Fill the line')
-        }else if(regexVal.test(val) && type == 'email'){
-          setErrorEmail('')
-        }
-
-        if(!regexname.test(val) && val != ''){
-          setErrorName('error Name')
+        if(!regexVal.test(val) && val != ''){
+          setErrorEmail('red')
         }else if(val == ''){
-          setErrorEmail('Fill the line')
+          setErrorEmail('#feaf39')
+        }else if(regexVal.test(val)){
+          setErrorEmail('green')
+        }
+        if(!regexname.test(val) && val != ''){
+          setErrorName('red')
+        }else if(val == ''){
+          setErrorEmail('feaf39')
         }else if(regexname.test(val)){
-          setErrorName('')
+          setErrorName('green')
         }
 
 
 
       }
-
       return{
       item:{
         func:regValidation,
         email:errorEmail,
-        name:errorname,
+        names:errorname,
       }}
       
 }

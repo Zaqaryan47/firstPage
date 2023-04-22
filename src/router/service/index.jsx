@@ -7,7 +7,7 @@ import './style.scss';
 const Serv = ()=>(
     <div>
          <div className="L-blocks">
-            <h1 className="title">Services</h1>
+            <p className="title9">Services</p>
         </div>
 
         <Service/>

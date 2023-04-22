@@ -1,3 +1,5 @@
+@import '../../assets/style/mixin.scss';
+
 
 .L-blocks{
     width: 100%;
@@ -8,9 +10,16 @@
     background-size: cover;
     margin-bottom: 50px;
 
-    .title{
+    .title9{
         text-align: center;
         color: white;
         font-size: 80px;
+        font-family: 'myfont';
+        
+        @include screen(390px) {
+
+            font-size: 40px;
+        }
+     
     }
 }

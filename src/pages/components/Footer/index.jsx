@@ -7,7 +7,7 @@ import './style.scss';
 const Footer = () => {
 
     const {item} = useValidation();
-    const [mail,setMail] = useState();
+    const [mail , setMail] = useState();
 
 
 
@@ -86,12 +86,13 @@ const Footer = () => {
                 <p className="cont">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
 
                 <div className="buttons">
-                    <input  className='inp' placeholder='Your Email' type="email" onChange={(e) =>{
+                    <input style={{border: '3px solid ' + item.email}}  className='inp' placeholder='Your Email' type="email" onChange={(e) =>{
                        setMail(e.target.value) 
                     }} />
-                    <h3>{item.email}</h3>
+                    
                     <button onClick={()=>{
                         item.func(mail,)
+                        
                     }} className="serch">SIGNUP</button>
                 </div>
             </div>

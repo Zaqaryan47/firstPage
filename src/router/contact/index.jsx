@@ -7,7 +7,7 @@ import './style.scss'
 const Contacts = ()=>(
     <div>
         <div className="L-blocks">
-            <h1 className="title">Contact Us</h1>
+            <h1 className="title4">Contact Us</h1>
         </div>
 
         <Contact/>

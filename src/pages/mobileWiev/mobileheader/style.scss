@@ -1,6 +1,14 @@
-.L-header{
-    background-color: #0F172B;
-    .header{
+@import '../../../assets/style/mixin.scss';
+
+.L-header {
+    background-color: #0f172b;
+
+    .mobright {
+
+        width: 120px;
+    }
+
+    .header {
         width: 100%;
         height: 50px;
         display: flex;
@@ -9,79 +17,121 @@
         position: relative;
         transition: 1s;
 
-        .left{
+        
+
+        .left {
             display: flex;
             align-items: center;
             justify-content: center;
 
-            .title{
+            
+
+
+            .title6 {
                 font-family: 'MyFont';
                 font-size: 45px;
                 color: #FEA116;
                 margin-left: 20px;
-            }
-        }
-        .mobright{
-            width: 100px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 25px;
+                @include screen(380px) {
+                    font-size: 20px;
+                }
 
-
-            .hidden{
-                width: 100%;
-                color: white;
                 
             }
-
-           
-        }
         }
 
-        .headerbtn{
+        .hidden {
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+    }
+
+    .headerbtn {
+        width: 100%;
+        background-color: #0f172b;
+        transition: 3s;
+        position: absolute;
+        z-index: 9;
+        display: none;
+
+
+
+
+
+        .btn {
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 800;
+            transition: 0.7s;
+            font-family: 'MyFont';
+            text-decoration: none;
+            border-bottom: 1px solid white;
             width: 100%;
-            background-color:#0F172B;
-            transition: 1s;
-            display: block;
-            position: absolute;
-            z-index: 9;
-            top: -315px;
-            
-        
-            .btn{
-                color: white;
-                font-size: 18px;
-                cursor: pointer;
-                font-weight: 800;
+            margin-top: 10px;
+            text-align: center;
+
+
+
+            &:hover {
+                color: #FEA116;
                 transition: 0.7s;
-                font-family: 'MyFont';
-                text-decoration: none;
-                border: 1px solid white;
-                width: 100%;
-                margin-top: 10px;
-                text-align: center;
+            }
 
 
-                &:hover{
-                    color: #FEA116;
-                    transition: 0.7s;
+        }
+
+        // .btn-hover {
+        //     position: relative;
+
+        //     &:hover {
+
+        //         .hiddens {
+        //             display: block;
+        //         }
+        //     }
+
+        //     .hiddens {
+        //         display: none;
+        //         position: absolute;
+        //         background-color: rgb(45, 45, 45);
+        //     }
+        // }
+
+        .button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #FEA116;
+            cursor: pointer;
+            font-family: 'MyFont';
+
+        }
+
+        .btn-hover {
+            position: relative;
+
+            &:hover {
+
+                .hiddens {
+                    display: block;
                 }
             }
-            .opti{
-                background-color: transparent;
-                border: none;
-            }
-            .button{
-                margin-top: 10px;
-                width: 100%;
-                padding: 10px;
-                border-radius:5px;
-                border: none;
-                background-color: #FEA116;
-                cursor: pointer;
-                font-family: 'MyFont';
 
+            .hiddens {
+                width: 100%;
+                display: block;
+                position: absolute;
+                top: 35px;
+
+                background-color: rgb(45, 45, 45);
             }
         }
+
+
+
+
+    }
 }

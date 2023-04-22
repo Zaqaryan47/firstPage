@@ -1,7 +1,15 @@
+import { useState } from 'react';
 import './style.scss';
+import useValidation from '../../../hook/useValidation';
 
 
 const Contact = ()=>{
+
+    const {item} = useValidation()
+    const [name2,setName2] = useState()
+    const [mail3, setMail3] = useState()
+
+
     return(
         <div>
             <div className="centers">
@@ -58,8 +66,12 @@ const Contact = ()=>{
                 <div className="rightus">
 
                     <div className="topright">
-                        <input placeholder='Your Name' className='inpt' type="text" />
-                        <input placeholder='Your Email' className='inpt' type="text" />
+                        <input style={{border: '3px solid ' + item.names}} placeholder='Your Name' className='inpt' type="text" onChange={(e) =>{
+                       setName2(e.target.value) 
+                    }} />
+                        <input style={{border: '3px solid ' + item.email}} placeholder='Your Email' className='inpt' type="email" onChange={(e) =>{
+                       setMail3(e.target.value) 
+                    }} />
                     </div>
                     <div className="bottomright">
                         <div className="col1">
@@ -68,7 +80,11 @@ const Contact = ()=>{
                         </div>
                         <input placeholder='Message' className='bottominp' type="text" />
                     </div>
-                    <button className='send'>SEND MESSAGE</button>
+                    <button onClick={()=>{
+                        item.func(mail3,name2)
+                        
+                        
+                    }} className='send'>SEND MESSAGE</button>
 
 
 
