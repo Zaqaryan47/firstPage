@@ -7,7 +7,6 @@ const Testii = ()=>(
     <div>
 
         <Testi/>
-        <Footer/>
 
     </div>
 )

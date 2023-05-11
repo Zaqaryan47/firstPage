@@ -13,6 +13,11 @@
             align-items: center;
             justify-content: center;
 
+
+            .darkicon{
+                margin-left: 50px;
+            }
+
             .title {
                 font-family: 'MyFont';
                 font-size: 45px;
@@ -78,3 +83,24 @@
         
     }
 }
+
+
+:root {
+    --background-color: #000000;
+    --color-text: white;
+    transition: 0.9s;
+  }
+  
+  [data-theme='light'] {
+    --background-color: #ffffff;
+    --color-text: black;
+    transition: 0.9s;
+
+  }
+  
+  body {
+    background: var(--background-color);
+    color: var(--color-text);
+    transition: 0.9s;
+
+  }

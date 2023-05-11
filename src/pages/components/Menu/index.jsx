@@ -2,7 +2,8 @@ import { useState } from 'react';
 import MenuComp from './component-menu';
 import { food } from './component-menu/util';
 import './style.scss';
-
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Menu = ()=>{
 
@@ -23,7 +24,8 @@ const Menu = ()=>{
     }
 
     return(
-        <div className='L-Menu_block'>
+        <div data-aos="fade-down-left" className='L-Menu_block'>
+
             <div className="titlesss">
                 <p className="gits"></p>
                 <p className="text">Food Menu</p>
@@ -32,7 +34,6 @@ const Menu = ()=>{
             <div className="titles2">
                 <p className="text2">Most Popular Items</p>
             </div>
-
             <div className="selectmenu">
                 <p onClick={one} className={`menuone ${tabindex == 1? 'active-btn':''}`}>
                     <i className="icon-coffee icon"></i>
@@ -59,11 +60,14 @@ const Menu = ()=>{
             </div>
 
             <div className="menu">
-                <div className="left">
+                <div data-aos="fade-left" className="left">
+
                 {meal.map(el => <MenuComp key={el.id} itemms={el}/>)}
+
                 </div>
-                <div className="right">
+                <div data-aos="fade-right" className="right">
                 {meal.map(el => <MenuComp key={el.id} itemms={el}/>)}
+
                 </div>
 
             </div>

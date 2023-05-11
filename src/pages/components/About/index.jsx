@@ -1,14 +1,21 @@
 import AboutComp from './aboutcomponents';
 import './style.scss';
 import { images } from './util';
-
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 const About = ()=>{
     return(
-        <div className='L-imgaeblock'>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"  className='L-imgaeblock'>
+
+
 
             <div className="left-img">
+            
+
+
             
             <div className="L-img1">
             {images[0].map(el => <AboutComp key={el.id} items={el}/>)}
@@ -19,9 +26,10 @@ const About = ()=>{
             {images.map(el => <AboutComp key={el.id} items={el}/>)}
 
             </div>
+           
             </div>
 
-            <div className="right-numbers">
+            <div data-aos="fade-left" className="right-numbers">
 
                 <div className="aboutus">
 
@@ -64,7 +72,6 @@ const About = ()=>{
             </div>
             
             
-
         </div>
     )
 }

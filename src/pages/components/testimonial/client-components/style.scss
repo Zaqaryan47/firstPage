@@ -1,8 +1,7 @@
 @import '../../../../assets/style/mixin.scss';
 
 .item-client{
-    width: 27%;
-    background-color: white;
+    width: 95%;
     padding: 30px;
     border: 1px solid silver;
     @include screen(1320px) {

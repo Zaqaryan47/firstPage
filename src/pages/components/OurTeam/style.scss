@@ -3,7 +3,6 @@
 .L-Teamblock {
     width: 100%;
     margin: 0 auto;
-    background-color: white;
 
     .titlesss {
         display: flex;
@@ -44,7 +43,6 @@
     .memberss {
         display: flex;
         justify-content: space-between;
-        background-color: white;
         padding-bottom: 50px;
 
         @include screen(1320px) {

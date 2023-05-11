@@ -18,7 +18,9 @@
             width: 55px;
             height: 2px;
             background-color: #FEA116;
+     
         }
+        
     }
     .titles2{
         display: flex;
@@ -36,25 +38,11 @@
 
     }
 
-    .clientbig{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 60px;
-        cursor: pointer;
-
-        @include screen(1320px) {
-            flex-direction: column;
-            width: 100%;
-            margin-top: 10px;
-        }
-
+    
+    .margintop{
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
-
-    .clients{
-        width: 30%;
-        background-color: darkgray;
-    }
+    
     
 }

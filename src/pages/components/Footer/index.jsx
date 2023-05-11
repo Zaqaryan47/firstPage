@@ -36,6 +36,7 @@ const Footer = () => {
                     <span className="selector">123 Street, New York, USA</span>
                 </p>
                 <p className="contact icon-phone">
+                <a className='selector' href="tel:+01234567890"></a>
                     <span className="selector">+012 345 67890</span>
                 </p>
                 <p className="contact icon-envelop">

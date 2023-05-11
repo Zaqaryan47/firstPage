@@ -1,7 +1,6 @@
 @import '../../../../assets/style/mixin.scss';
 .block-component{
     width: 24%;
-    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 
     @include screen(1300px) {

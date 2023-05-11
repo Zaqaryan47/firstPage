@@ -3,6 +3,8 @@ import './style.scss';
 import imgvideo from '../../../assets/img/video.jpg'
 import useValidation from '../../../hook/useValidation';
 import { useState } from 'react';
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 
@@ -13,12 +15,16 @@ const Reseption = ()=>{
     const [name,setName]= useState();
 
     return(
-        <div className='L-reseption'>
+        <div  data-aos="flip-left" className='L-reseption'>
+
+
             <div className="left">
                 <img className='imgvid' src={imgvideo} alt="" />
 
             </div>
-            <div className="right">
+
+            <div  data-aos="flip-right" className="right">
+
                 <div className="texts">
                     <p className="name">Reservation</p>
                     <p className="gits"/>
@@ -53,6 +59,7 @@ const Reseption = ()=>{
                     }} className="book">BOOK NOW</button>
 
                 </div>
+
             </div>
 
         </div>

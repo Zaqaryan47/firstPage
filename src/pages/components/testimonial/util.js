@@ -12,6 +12,7 @@ export const client = [
         name:'Client Name',
         hobby:'Profession',
     },
+    
     {
         id:2,
         icon:'icon-quote-left',
@@ -28,4 +29,29 @@ export const client = [
         name:'Client Name',
         hobby:'Profession',
     },
+    {
+        id:4,
+        icon:'icon-quote-left',
+        img:client2,
+        descript:'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
+        name:'Client Name',
+        hobby:'Profession',
+    },
+    {
+        id:5,
+        icon:'icon-quote-left',
+        img:client1,
+        descript:'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
+        name:'Client Name',
+        hobby:'Profession',
+    },
+    {
+        id:6,
+        icon:'icon-quote-left',
+        img:client3,
+        descript:'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
+        name:'Client Name',
+        hobby:'Profession',
+    },
+
 ]
